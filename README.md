@@ -80,10 +80,8 @@ Build a reliable **multiclass classifier** for `NObeyesdad` (7 classes, from *In
 
 ## 🗂 Repo Structure
 ```
-├── notebooks/
-│ └── obesity_ml_pipeline.ipynb # Full EDA → FS → tuning → eval
 ├── data/ # (Optional) dataset placeholder
-├── figures/ # Confusion matrices & plots
+├── AML Coursework.ipynb # Full EDA → FS → tuning → eval
 └── README.md
 ```
 
