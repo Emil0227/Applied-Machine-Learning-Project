@@ -9,7 +9,7 @@ Build a reliable **multiclass classifier** for `NObeyesdad` (7 classes, from *In
 
 ---
 
-## 📊 Dataset
+## Dataset
 - **Name:** *Estimation of Obesity Levels Based on Eating Habits and Physical Condition* (UCI, 2020)  
 - **Records / Features:** 2,111 rows, 17 attributes (mixed numeric + categorical)  
 - **Geography:** Mexico, Peru, Colombia  
@@ -20,7 +20,7 @@ Build a reliable **multiclass classifier** for `NObeyesdad` (7 classes, from *In
 
 ---
 
-## 🔧 Pipeline (What I built)
+## Pipeline (What I built)
 **1) Data Quality & Scaling**
 - Verified **no missingness** and **reasonable class balance**.
 - Standardized numeric features (mean 0, std 1) to stabilize distance-based models and speed up gradient methods.
@@ -41,7 +41,7 @@ Build a reliable **multiclass classifier** for `NObeyesdad` (7 classes, from *In
 
 ---
 
-## 🧪 Models & Best Configurations
+## Models & Best Configurations
 
 ### Logistic Regression (Multinomial)
 - **Best (example):** `C=3.0561`, `penalty='l1'`, `solver='saga'`
@@ -61,7 +61,7 @@ Build a reliable **multiclass classifier** for `NObeyesdad` (7 classes, from *In
 
 ---
 
-## 📈 Results (Macro / Weighted F1)
+## Results (Macro / Weighted F1)
 - **SVM** → **0.96 / 0.96** (best overall balance; very solid per-class precision/recall)
 - **Logistic Regression** → **0.96 / 0.96** (close second; wins on interpretability)
 - **GBM** → **0.95 / 0.95**
@@ -79,3 +79,15 @@ Build a reliable **multiclass classifier** for `NObeyesdad` (7 classes, from *In
 ---
 
 ## 🗂 Repo Structure
+```
+├── notebooks/
+│ └── obesity_ml_pipeline.ipynb # Full EDA → FS → tuning → eval
+├── data/ # (Optional) dataset placeholder
+├── figures/ # Confusion matrices & plots
+└── README.md
+```
+
+---
+
+
+
